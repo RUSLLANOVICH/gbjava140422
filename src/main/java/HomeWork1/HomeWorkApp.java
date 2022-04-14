@@ -19,21 +19,21 @@ public class HomeWorkApp {
     public static void checkSumSign(){
         int a = 25, b = 33, result = 25 + 33;
         if (result >= 0){
-            System.out.println("РЎСѓРјРјР° РїРѕР»РѕР¶РёС‚РµР»СЊРЅР°");
+            System.out.println("Сумма положительна");
         }
         if (result < 0) {
-            System.out.println("РЎСѓРјРјР° РѕС‚СЂС†Р°С‚РµР»СЊРЅР°");
+            System.out.println("Сумма отрцательна");
         }
 
     }
     public static void printColor (){
         int value = (int) (Math.random() * 120);
         if (value <= 0){
-            System.out.println("РљСЂР°СЃРЅС‹Р№");
+            System.out.println("Красный");
         }else if (value > 0 && value < 100) {
-            System.out.println("Р–РµР»С‚С‹Р№");
+            System.out.println("Желтый");
         }else {
-            System.out.println("Р—РµР»РµРЅС‹Р№");
+            System.out.println("Зеленый");
         }
     }
 
@@ -41,8 +41,9 @@ public class HomeWorkApp {
         int a = (int) (Math.random()*50);
         int b = (int) (Math.random()*50);
         if (a >= b){
-            System.out.println("a");
-
+            System.out.println("a>=b");
+        }else {
+            System.out.println("a<b");
         }
     }
 }
