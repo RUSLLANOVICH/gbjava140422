@@ -2,11 +2,12 @@ package HomeWork2;
 
 public class HomeWork2 {
     public static void main(String[] args) {
-        System.out.println(witch10and20(14, 8));
-        isPositivOrNegative(0);
-        System.out.println(isNegative(-1));
+
+        System.out.println(witch10and20(4, 7));
+        isPositivOrNegative(10);
+        System.out.println(isNegative(1));
         printGeekbrainsNTimes("GeekBrains", 6);
-        leapYear(2020);
+        leapYear(200);
 
     }
 
@@ -43,7 +44,7 @@ public class HomeWork2 {
     }
 
     public static void leapYear(int x) {
-        if (x % 4 == 0) {
+        if ((x % 4 == 0)&&(x % 100 != 0)||(x % 400 ==0)) {
             System.out.println(x + "год вискосный");
         } else {
             System.out.println(x + "год невискосный");
